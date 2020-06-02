@@ -703,3 +703,7 @@ input[type='file'] {
 .logo-text {
   color: #999;
 }
+
+.modal-dialog {
+  min-width: 600px;
+}
