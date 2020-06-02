@@ -707,3 +707,7 @@ input[type='file'] {
 .modal-dialog {
   min-width: 600px;
 }
+
+.modal {
+  overflow-x: auto !important;
+}
