@@ -15,46 +15,55 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
-    
+
     <style>
-    input[type='file'] {
-      display: none
-    }
-    .backgroundPhoto{
-        background-color: red;
-    }
+        input[type='file'] {
+            display: none
+        }
+
+        .backgroundPhoto {
+            background-color: red;
+        }
     </style>
 
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
+    <!-- FACEBOOK LIBRARY -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=424302491717352&autoLogAppEvents=1"></script>
 
-	
     <!-- Nav Menu -->
-
     <div class="nav-menu fixed-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="navbar-brand" href="#home"><!--<img src="images/logo.jpeg" class="img-fluid" alt="logo">-->ENERMED SOLAR</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <a class="navbar-brand" href="#home">
+                            <!--<img src="images/logo.jpeg" class="img-fluid" alt="logo">-->ENERMED SOLAR</a> <button
+                            class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+                                class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link active" href="#home">INÍCIO <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link active" href="#home">INÍCIO <span
+                                            class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#solar">ENERGIA SOLAR</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#contato">CONTATO</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#duvida">DÚVIDAS</a> </li>
@@ -66,21 +75,69 @@
             </div>
         </div>
     </div>
-	
+
     <header class="bg-gradient" id="home">
         <div class="container mt-">
             <h1>LEVANDO ENERGIA ATÉ VOCÊ</h1>
             <p class="tagline"> com garantia, qualidade e bons serviços!</p>
             <p></p>
-            <p> 
-            <a href="#orcamento" class="btn btn-outline-light btn-lg my-3 my-sm-0 ml-lg-3">Faça um Orçamento</a>
+            <p>
+                <a href="#orcamento" class="btn btn-outline-light btn-lg my-3 my-sm-0 ml-lg-3">Faça um Orçamento</a>
             </p>
             <br />
         </div>
         <!--<div class="img-holder mt-3"><img src="images/placa_solar1.png" alt="phone" class="img-fluid"></div>-->
     </header>
 
-     <div class="section light-bg" id="galeria">
+    <div class="section light-bg" id="galeria">
+        <div class="container-fluid">
+            <!-- Jumbotron -->
+            <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+                <h1 class="display-4">PROMOÇÃO DE ANIVERSÁRIO</h1>
+                <p class="lead">São 07 anos trazendo a melhor energia com toda confiança e credibilidade!</p>
+                <hr class="my-4">
+                <p>QUER CONCORRER A UMA CESTA BEM RECHEADA?</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
+                    data-target="#exampleModal">Eu quero participar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Como participar?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                    <div class="fb-post" data-href="https://www.facebook.com/costaoestefm/videos/2969154826486766/"
+                        data-show-text="true" data-width="">
+                        <blockquote cite="https://developers.facebook.com/costaoestefm/videos/2969154826486766/"
+                            class="fb-xfbml-parse-ignore">
+                            <p>#compartilhe e concorra a uma cesta de delícias sorteio dia 04/06 na rede costa oeste com
+                                Carlinhos Pessoa Costa Oeste Carlinhos Pessoa Le Mazurana Gi Bartocz Valdecir Gonçalves
+                            </p>Publicado por <a href="https://www.facebook.com/costaoestefm/">Rede Costa Oeste de
+                                Comunicação</a> em&nbsp;<a
+                                href="https://developers.facebook.com/costaoestefm/videos/2969154826486766/">Segunda-feira,
+                                1 de junho de 2020</a>
+                        </blockquote>
+                    </div>
+                    <br />
+                    <p>Assita, curta e compartilhe este vídeo!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Entendi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section light-bg" id="galeria">
         <div class="container">
             <div class="section-title">
                 <small>GALERIA</small>
@@ -89,122 +146,125 @@
 
             <div class="img-gallery owl-carousel owl-theme">
                 <div>
-                	<img src="images/fotos_solar1.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação rural para suinocultura, Serranópolis do Iguaçu, 48 placas</div>
+                    <img src="images/fotos_solar1.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação rural para suinocultura, Serranópolis do Iguaçu, 48 placas</div>
                 </div>
 
                 <div>
-                	<img src="images/fotos_solar2.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação residencial, Medianeira, 18 placas</div>
+                    <img src="images/fotos_solar2.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação residencial, Medianeira, 18 placas</div>
                 </div>
 
                 <div>
-                	<img src="images/fotos_solar3.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação residencial, Serranópolis do Iguaçu, 14 placas</div>
+                    <img src="images/fotos_solar3.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação residencial, Serranópolis do Iguaçu, 14 placas</div>
                 </div>
 
                 <div>
-                	<img src="images/fotos_solar4.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação residencial, Medianeira, 11 placas</div>
+                    <img src="images/fotos_solar4.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação residencial, Medianeira, 11 placas</div>
                 </div>
 
                 <div>
-                	<img src="images/fotos_solar5.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação comercial, Pesque e Prosa, Medianeira, 263 placas</div>
+                    <img src="images/fotos_solar5.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação comercial, Pesque e Prosa, Medianeira, 263 placas</div>
                 </div>
 
                 <div>
-                	<img src="images/fotos_solar6.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação comercial, Italianinha Tour, Matelândia, 242 placas</div>
+                    <img src="images/fotos_solar6.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação comercial, Italianinha Tour, Matelândia, 242 placas</div>
                 </div>
-                
+
                 <div>
-                	<img src="images/fotos_solar7.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação industrial, Laticínio Lactomil, Serranópolis do Iguaçu, 734 placas</div>
+                    <img src="images/fotos_solar7.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação industrial, Laticínio Lactomil, Serranópolis do Iguaçu, 734
+                        placas</div>
                 </div>
-                
+
                 <div>
-                	<img src="images/fotos_solar8.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação rural para avicultura, Serranópolis do Iguaçu, 360 placas</div>
+                    <img src="images/fotos_solar8.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação rural para avicultura, Serranópolis do Iguaçu, 360 placas</div>
                 </div>
-                
+
                 <div>
-                	<img src="images/fotos_solar9.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação rural para avicultura, Missal, 295 placas</div>
+                    <img src="images/fotos_solar9.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação rural para avicultura, Missal, 295 placas</div>
                 </div>
-                
+
                 <div>
-                	<img src="images/fotos_solar10.jpeg" height="300" alt="Fotos Enermed Solar">
-                	<div class="sub-images">Instalação industrial, Serranópolis do Iguaçu, 50 placas</div>
+                    <img src="images/fotos_solar10.jpeg" height="300" alt="Fotos Enermed Solar">
+                    <div class="sub-images">Instalação industrial, Serranópolis do Iguaçu, 50 placas</div>
                 </div>
             </div>
 
         </div>
 
-    <div class="section light-bg" id="solar">
+        <div class="section light-bg" id="solar">
 
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-title">
-                <small>ENERGIA SOLAR</small>
-                <h3>POR QUE ESCOLHER ENERGIA SOLAR?</h3>
+                <div class="section-title">
+                    <small>ENERGIA SOLAR</small>
+                    <h3>POR QUE ESCOLHER ENERGIA SOLAR?</h3>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card features">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-shine gradient-fill ti-3x mr-3"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Sustentável</h4>
+                                        <p class="card-text">Ela é limpa e sustentável, se baseia na maior fonte de
+                                            energia renovável do mundo, o SOL!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card features">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Segurança</h4>
+                                        <p class="card-text">Ela é uma tecnologia 100% comprovada e já é utilizada há
+                                            mais de 30 anos. A energia solar é segura, limpa e abundante.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card features">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-money gradient-fill ti-3x mr-3"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Economia</h4>
+                                        <p class="card-text">Valorize seu imóvel e tenha economia imediata!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-shine gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Sustentável</h4>
-                                    <p class="card-text">Ela é limpa e sustentável, se baseia na maior fonte de energia renovável do mundo, o SOL!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Segurança</h4>
-                                    <p class="card-text">Ela é uma tecnologia 100% comprovada e já é utilizada há mais de 30 anos. A energia solar é segura, limpa e abundante.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-money gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Economia</h4>
-                                    <p class="card-text">Valorize seu imóvel e tenha economia imediata!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
-
-
-    </div>
- 
         <div class="section">
 
             <div class="container">
@@ -230,20 +290,22 @@
                                     <p>Livre-se de aumentos abusivos em sua fatura de energia elétrica.</p>
                                 </div>
                             </li>
-                            
+
                             <li class="media">
                                 <div class="ti-settings gradient-fill ti-4x mr-3"></div>
                                 <div class="media-body">
                                     <h5>TRANQUILIDADE NA INSTALAÇÃO</h5>
-                                    <p>Especialistas cuidam de tudo para você: projeto, instalação, manutenção, garantia e monitoramento.</p>
+                                    <p>Especialistas cuidam de tudo para você: projeto, instalação, manutenção, garantia
+                                        e monitoramento.</p>
                                 </div>
                             </li>
-                            
+
                             <li class="media">
                                 <div class="ti-cloud gradient-fill ti-4x mr-3"></div>
                                 <div class="media-body">
                                     <h5>REDUÇÃO DOS GASES DO EFEITO ESTUFA</h5>
-                                    <p>Você irá contribuir para a redução dos gases do efeito estufa, já que a energia é limpa. </p>
+                                    <p>Você irá contribuir para a redução dos gases do efeito estufa, já que a energia é
+                                        limpa. </p>
                                 </div>
                             </li>
 
@@ -270,18 +332,25 @@
                 <div class="row pt-4">
                     <div class="col-md-6">
                         <h4 class="mb-3">Onde posso instalar as placas?</h4>
-                        <p class="light-font mb-5"> As placas solares podem ser instaladas na sua residência, comércio, indústria, tanto no solo, quanto nos telhados! </p>
+                        <p class="light-font mb-5"> As placas solares podem ser instaladas na sua residência, comércio,
+                            indústria, tanto no solo, quanto nos telhados! </p>
 
                         <h4 class="mb-3">Como funciona a energia solar?</h4>
-                        <p class="light-font mb-5">Os painéis são instalados e são conectados ao seu inversor solar, o painel recebe a luz do sol e então gera energia elétrica. A energia passa pelo inversor para ser convertida em corrente alternada. Após a conversão, a energia está adequada para uso em qualquer equipamento conectado à rede elétrica.</p>
+                        <p class="light-font mb-5">Os painéis são instalados e são conectados ao seu inversor solar, o
+                            painel recebe a luz do sol e então gera energia elétrica. A energia passa pelo inversor para
+                            ser convertida em corrente alternada. Após a conversão, a energia está adequada para uso em
+                            qualquer equipamento conectado à rede elétrica.</p>
 
                     </div>
                     <div class="col-md-6">
                         <h4 class="mb-3">E se eu gerar mais do que gasto?</h4>
-                        <p class="light-font mb-5">A energia consumida é injetada na rede de distribuição, gerando créditos para o seu uso. O crédito acumulado abate o consumo das próximas tarifas ou poderá ser compartilhado com outras unidades consumidoras. </p>
+                        <p class="light-font mb-5">A energia consumida é injetada na rede de distribuição, gerando
+                            créditos para o seu uso. O crédito acumulado abate o consumo das próximas tarifas ou poderá
+                            ser compartilhado com outras unidades consumidoras. </p>
 
                         <h4 class="mb-3">Posso compartilhar com outras unidades consumidoras?</h4>
-                        <p class="light-font mb-5"> Sim, você pode gerar o crédito e abater diversas unidades consumidoras, desde que todas estejam sob mesmo CPF. </p>
+                        <p class="light-font mb-5"> Sim, você pode gerar o crédito e abater diversas unidades
+                            consumidoras, desde que todas estejam sob mesmo CPF. </p>
 
                     </div>
                 </div>
@@ -296,22 +365,24 @@
             <div class="container">
                 <div class="call-to-action">
 
-                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x" data-toggle="modal" data-target="#modalExemplo"></span></div>
+                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x" data-toggle="modal"
+                            data-target="#modalExemplo"></span></div>
                     <h2>Faça um orçamento agora mesmo pelo nosso WhatsApp!</h2>
                     <h4 class="h3-contato">Clique em um dos telefones e seja redirecionado!</h4>
                     <p class="tagline"> </p>
                     <div class="my-4">
-                    	<a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=554599134-9978">
-                    		<h3 class="h3-contato">Leandro - (45) 99134-9978</h3>
-                    	</a>
-                    	<a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=554599800-3519">
-                    		<h3 class="h3-contato">Eduardo - (45) 99800-3519</h3>
-                    	</a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=554599134-9978">
+                            <h3 class="h3-contato">Leandro - (45) 99134-9978</h3>
+                        </a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=554599800-3519">
+                            <h3 class="h3-contato">Eduardo - (45) 99800-3519</h3>
+                        </a>
                     </div>
 
 
                     <!-- Modal -->
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -330,14 +401,17 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Nome</span>
                                                 </div>
-                                                <input required type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome completo...">
+                                                <input required type="text" name="nome" class="form-control" id="nome"
+                                                    placeholder="Digite seu nome completo...">
                                             </div>
 
                                             <div class="input-group col-md-6 mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">Telefone</span>
                                                 </div>
-                                                <input required data-mask="(00) 0000-00000" type="tel" class="form-control" id="tel" name="tel" placeholder="Digite seu telefone celular...">
+                                                <input required data-mask="(00) 0000-00000" type="tel"
+                                                    class="form-control" id="tel" name="tel"
+                                                    placeholder="Digite seu telefone celular...">
                                             </div>
 
                                         </div>
@@ -347,14 +421,16 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">E-mail</span>
                                                 </div>
-                                                <input name="email" required type="email" class="form-control" id="email" placeholder="Digite seu e-mail...">
+                                                <input name="email" required type="email" class="form-control"
+                                                    id="email" placeholder="Digite seu e-mail...">
                                             </div>
 
                                             <div class="input-group col-md-3 mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">CEP</span>
                                                 </div>
-                                                <input name="cep" data-mask="00000-000"required type="text" class="form-control" id="cep" placeholder="Seu CEP...">
+                                                <input name="cep" data-mask="00000-000" required type="text"
+                                                    class="form-control" id="cep" placeholder="Seu CEP...">
                                             </div>
                                         </div>
 
@@ -363,74 +439,79 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">R$</span>
                                                 </div>
-                                                <input type="text" id="conta"  name="conta" class="form-control" placeholder="Qual o valor médio da sua conta de luz?">
+                                                <input type="text" id="conta" name="conta" class="form-control"
+                                                    placeholder="Qual o valor médio da sua conta de luz?">
                                             </div>
 
                                             <div class="input-group col-md-4 mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="ti-clip gradient-fill ti-1x input-group-text"></span>
                                                     <label for="arquivo" class="form-control custom-file-upload">
-                                                       Insira sua Conta de Luz
+                                                        Insira sua Conta de Luz
                                                     </label>
-                                                    <input id="arquivo" name="arquivo" type="file" accept="image/*,.pdf">
-                                                    </div>
+                                                    <input id="arquivo" name="arquivo" type="file"
+                                                        accept="image/*,.pdf">
                                                 </div>
                                             </div>
-
                                         </div>
 
-                                        <div class="modal-footer">
-                                            
-                                            <div class="col-md-12"> 
-                                                <button type="submit" class="btn btn-danger">Solicitar um Orçamento</button>
-                                            </div>
-                                        
-                                        </div>
-                                    </form>
                                 </div>
+
+                                <div class="modal-footer">
+
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-danger">Solicitar um Orçamento</button>
+                                    </div>
+
+                                </div>
+                                </form>
                             </div>
                         </div>
-                        <!--<p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>-->
                     </div>
+                    <!--<p class="text-primary"><small><i>*Works on iOS 10.0.5+, Android Kitkat and above. </i></small></p>-->
                 </div>
-
             </div>
-            <!-- // end .section -->
 
-            <div class="light-bg py-5" id="contato">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 mb-0 text-md-left text-sm-left text-xl-left text-lg-left">
-                            <p class="mb-2"> 
-                                <span class="ti-location-pin mr-2"></span> 
-                                Av. 24 de Outubro, 3970 - Jd. Florença - Medianeira - Paraná
+        </div>
+        <!-- // end .section -->
+
+        <div class="light-bg py-5" id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-0 text-md-left text-sm-left text-xl-left text-lg-left">
+                        <p class="mb-2">
+                            <span class="ti-location-pin mr-2"></span>
+                            Av. 24 de Outubro, 3970 - Jd. Florença - Medianeira - Paraná
+                        </p>
+
+                        <div class="d-block d-sm-inline-block">
+                            <p class="mb-0">
+                                <span class="ti-email mr-2"></span>
+                                <a class="mr-4"
+                                    href="mailto:enermedmedianeira@gmail.com">enermedmedianeira@gmail.com</a>
                             </p>
 
-                            <div class="d-block d-sm-inline-block">
-                                <p class="mb-0">
-                                    <span class="ti-email mr-2"></span> 
-                                    <a class="mr-4" href="mailto:enermedmedianeira@gmail.com">enermedmedianeira@gmail.com</a>
-                                </p>
+                            <p class="mb-0">
+                                <span class="ti-headphone-alt mr-2"></span> <a class="mr-4" href="tel:4532641912">(45)
+                                    3264-1912</a>
+                            </p>
 
-                                <p class="mb-0">
-                                    <span class="ti-headphone-alt mr-2"></span> <a class="mr-4" href="tel:4532641912">(45) 3264-1912</a>
-                                </p>
+                            <p class="mb-0">
+                                <span class="ti-headphone-alt mr-2"></span> <a class="mr-4" href="tel:45991349978">(45)
+                                    99134-9978</a>
+                            </p>
 
-                                <p class="mb-0">
-                                    <span class="ti-headphone-alt mr-2"></span> <a class="mr-4" href="tel:45991349978">(45) 99134-9978</a>
-                                </p>
-
-
-                            </div>
-
-
-                            
 
                         </div>
-                        <div class="col-lg-6">
-                            <div class="social-icons">
-                                <!--<a href="#"><span class="ti-facebook"></span></a>-->
-                                <!--<a href="#"><span class="ti-twitter-alt"></span></a>
+
+
+
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-icons">
+                            <!--<a href="#"><span class="ti-facebook"></span></a>-->
+                            <!--<a href="#"><span class="ti-twitter-alt"></span></a>
                                 <a href="#"><span class="ti-instagram"></span></a>-->
                         </div>
                     </div>
@@ -441,31 +522,32 @@
         </div>
         <!-- // end .section -->
         <footer class="my-5 text-center">
-        	<div class="logo-text">Marcas</div>
-        	<img class="logo-footer" src="images/logo_marcas1.png" width="auto" height="64" alt="Marcas Enermed Solar">
-        	<img class="logo-footer" src="images/logo_marcas2.png" width="auto" height="64" alt="Marcas Enermed Solar">
-        	<img class="logo-footer" src="images/logo_marcas3.png" width="auto" height="64" alt="Marcas Enermed Solar">
-        	<img class="logo-footer" src="images/logo_marcas4.png" width="auto" height="64" alt="Marcas Enermed Solar">
-        	<img class="logo-footer" src="images/logo_marcas5.png" width="auto" height="64" alt="Marcas Enermed Solar">
-        	<img class="logo-footer" src="images/logo_marcas6.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <div class="logo-text">Marcas</div>
+            <img class="logo-footer" src="images/logo_marcas1.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <img class="logo-footer" src="images/logo_marcas2.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <img class="logo-footer" src="images/logo_marcas3.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <img class="logo-footer" src="images/logo_marcas4.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <img class="logo-footer" src="images/logo_marcas5.png" width="auto" height="64" alt="Marcas Enermed Solar">
+            <img class="logo-footer" src="images/logo_marcas6.png" width="auto" height="64" alt="Marcas Enermed Solar">
             <p class="mb-2"><small>2020 - Todos os direitos reservados.</small></p>
 
-        <!--<small>
+            <!--<small>
             <a href="#" class="m-2">PRESS</a>
             <a href="#" class="m-2">TERMS</a>
             <a href="#" class="m-2">PRIVACY</a>
         </small>-->
-    </footer>
-    <!-- AJAX -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-    <!-- jQuery and Bootstrap -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Plugins JS -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+        </footer>
+        <!-- AJAX -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+        <!-- jQuery and Bootstrap -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Plugins JS -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
 
 </body>
 
